@@ -15,6 +15,7 @@ android {
     useLibrary("android.car")
 
     defaultConfig {
+        applicationId="com.americatechsolutions.app"
         manifestPlaceholders["sentryRelease"] = "$applicationId@$versionName"
         manifestPlaceholders["sentryDsn"] = System.getenv("SENTRY_DSN") ?: ""
 
